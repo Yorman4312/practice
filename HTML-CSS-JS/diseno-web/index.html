@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>P R A C T I C A</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <!-- HEADER -->
+  <header>
+    <a class="logo" href="#"> L O G O </a>
+
+    <div class="search-section">
+      <input class="input-search" type="search" placeholder="Busca aqui">
+      <span class="material-symbols-outlined">search</span>
+    </div>
+
+    <div class="options-section">
+      <span class="material-symbols-outlined">menu</span>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h1>Pagina de prueba y practica con estructura HTML y diseño CSS basico</h1>
+
+    <!-- seccion 1 -->
+    <section class="section-1">
+      <h3>Seccion 1</h3>
+      <p>Esta seccion ocupara el 100% del ancho</p>
+    </section>
+
+    <!-- seccion 2 y 3 -->
+    <div class="section-2">
+      <section>
+        <h3>Seccion 2</h3>
+        <p>Esta seccion ocupara el 50% del ancho disponible junto a la seccion 3</p>
+      </section>
+
+      <section>
+        <h3>Seccion 3</h3>
+        <p>Esta seccion ocupara el 50% del ancho disponible junto a la seccion 2</p>
+      </section>
+    </div>
+
+    <!-- seccion 4 -->
+    <section class="section-4">
+      <h3>Figuras</h3>
+      <div class="container-figures">
+        <div class="square">
+          <p>Cuadrado</p>
+        </div>
+
+        <div class="circle">
+          <p>Circulo</p>
+        </div>
+      </div>
+    </section>
+
+    <form id="form" class="form">
+      <div class="formulario">
+        <h3>Formulario de prueba</h3>
+        <div class="container-campos">
+          <div class="campo">
+            <label for="name">Nombre completo:</label>
+            <input id="name" type="text" required>
+          </div>
+          <div class="campo">
+            <label for="age">Edad:</label>
+            <input id="age" type="number" required>
+          </div>
+        </div>
+        <button type="submit">Enviar</button>
+      </div>
+
+      <div class="respuestas">
+        <h3>Respuestas</h3>
+        <p id="respuesta">Diligencia el formulario</p>
+      </div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
